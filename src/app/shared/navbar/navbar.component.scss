@@ -1,0 +1,15 @@
+.navbar{
+  position: fixed;
+  top: 0;
+  height: 80px;
+  background: #1a1a1a;
+  z-index: 3;
+  box-shadow: 0 0 5px black;
+}
+
+.navbar-brand{
+  img{
+    background: #1a1a1a;
+    border-bottom-right-radius: 30px;
+  }
+}

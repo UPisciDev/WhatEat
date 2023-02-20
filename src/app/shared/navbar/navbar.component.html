@@ -1,9 +1,13 @@
-<nav class="navbar navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="https://i.ibb.co/x1SjcL0/logo-whateat.png" alt="" width="100px"></a>
+<nav class="navbar navbar-dark fixed-top">
+  <div class="container-fluid ps-0">
+    <a class="navbar-brand" href="#">
+      <img src="https://i.ibb.co/StV7wJW/logo-whateat.png" alt="" width="50px">
+      <img src="https://i.ibb.co/StV7wJW/logo-whateat.png" alt="" width="50px">
+      <img src="https://i.ibb.co/StV7wJW/logo-whateat.png" alt="" width="50px">
+    </a>
     <button class="navbar-toggler btn menu text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
         (mouseenter)="faMenuIcon = faPizzaSlice" (mouseleave)="faMenuIcon = faBars" (click)="faMenuIcon = faBars">
-      <fa-icon [icon]="faMenuIcon"></fa-icon>
+      <fa-icon [icon]="faMenuIcon" class="fa-duotone"></fa-icon>
     </button>
     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
       <div class="offcanvas-header">

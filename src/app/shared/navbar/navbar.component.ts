@@ -6,15 +6,11 @@ import {faPizzaSlice, faBars} from '@fortawesome/free-solid-svg-icons'
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent{
 
   faPizzaSlice = faPizzaSlice;
   faBars = faBars;
   faMenuIcon = faBars;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

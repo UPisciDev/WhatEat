@@ -4,3 +4,17 @@
   border: none !important;
   transition: .3s all;
 }
+
+body{
+  background: url(https://cdn.suwalls.com/wallpapers/abstract/red-and-white-tablecloth-47553-2560x1600.jpg) no-repeat fixed !important;
+  background-size: cover !important;
+
+  &:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+  }
+}
