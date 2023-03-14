@@ -8,9 +8,9 @@ import {faPizzaSlice, faBars} from '@fortawesome/free-solid-svg-icons'
 })
 export class NavbarComponent{
 
-  faPizzaSlice = faPizzaSlice;
-  faBars = faBars;
-  faMenuIcon = faBars;
+  pizzaIcon = "https://i.ibb.co/8rsZ5b5/pizza.png";
+  menuIcon = "https://i.ibb.co/G5SrQB3/menu.png";
+  startMenuIcon = this.menuIcon;
 
 
 }

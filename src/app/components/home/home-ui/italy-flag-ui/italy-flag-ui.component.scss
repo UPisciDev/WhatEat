@@ -1,0 +1,42 @@
+.flag{
+  box-shadow: 5px 0 10px black;
+  background: inherit;
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: calc(var(--navbar-height) + 3rem);
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 0;
+    background: #1a1a1a;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  &__front{
+    z-index: 2;
+  }
+
+  &__green{
+    background-color: var(--green-flag-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__white{
+    background-color: var(--white-flag-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__red{
+    background-color: var(--red-flag-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

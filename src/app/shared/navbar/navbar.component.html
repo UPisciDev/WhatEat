@@ -1,13 +1,11 @@
-<nav class="navbar navbar-dark fixed-top">
+<nav class="navbar navbar-dark fixed-top w-100 mb-4">
   <div class="container-fluid ps-0">
     <a class="navbar-brand" href="#">
-      <img src="https://i.ibb.co/StV7wJW/logo-whateat.png" alt="" width="50px">
-      <img src="https://i.ibb.co/StV7wJW/logo-whateat.png" alt="" width="50px">
-      <img src="https://i.ibb.co/StV7wJW/logo-whateat.png" alt="" width="50px">
+      <img src="https://i.ibb.co/XJWtTZ0/logo-whateat-xl.png" class="p-4" alt="" width="300px">
     </a>
     <button class="navbar-toggler btn menu text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-        (mouseenter)="faMenuIcon = faPizzaSlice" (mouseleave)="faMenuIcon = faBars" (click)="faMenuIcon = faBars">
-      <fa-icon [icon]="faMenuIcon" class="fa-duotone"></fa-icon>
+        (mouseenter)="startMenuIcon = pizzaIcon" (mouseleave)="startMenuIcon = menuIcon" (click)="startMenuIcon = menuIcon">
+      <img [src]="startMenuIcon" width="30px">
     </button>
     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
       <div class="offcanvas-header">

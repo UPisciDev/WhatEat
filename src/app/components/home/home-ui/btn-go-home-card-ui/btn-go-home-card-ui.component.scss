@@ -1,0 +1,25 @@
+.btns-home{
+  &__card{
+    margin-top: 10%;
+  }
+
+  &__btn{
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  &__btn-card{
+    height: 300px;
+
+    &.green{
+      background-color: var(--green-flag-color);
+    }
+    &.white{
+      background-color: var(--white-flag-color);
+    }
+    &.red{
+      background-color: var(--red-flag-color);
+    }
+  }
+}

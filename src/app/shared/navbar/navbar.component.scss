@@ -1,5 +1,5 @@
 .navbar{
-  position: fixed;
+  position: sticky;
   top: 0;
   height: 80px;
   background: #1a1a1a;
@@ -7,9 +7,39 @@
   box-shadow: 0 0 5px black;
 }
 
+.navbar-toggler{
+  margin-top: -10px;
+  &:hover{
+    animation-name: rotateHS;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+  }
+
+  &:focus{
+    box-shadow: none;
+  }
+}
+
 .navbar-brand{
   img{
+    position: absolute;
+    left: calc(50% - 150px);
     background: #1a1a1a;
-    border-bottom-right-radius: 30px;
+    border-radius: 0 0 50% 50%;
+    margin-top: -40px;
   }
+}
+
+@media (max-width: 452px){
+  .navbar-brand{
+    img{
+      width: 200px;
+      left: calc(50% - 100px);
+    }
+  }
+}
+
+@keyframes rotateHS {
+  from{transform: rotate(0deg)}
+  to{transform: rotate(360deg)}
 }

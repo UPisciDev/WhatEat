@@ -1,0 +1,6 @@
+<button class="btn-go w-100 p-4" [ngClass]="{'position-relative' : positionRelative, 'in-front' : isInFront, 'h-auto' : height50}">
+  <img *ngIf="haveImage" [src]="imgSrc" alt="" width="60px" class="pe-3">
+  <span>{{text}}
+    <fa-icon *ngIf="haveArrowIcon" [icon]="faArrowRight" class="faArrow"></fa-icon>
+  </span>
+</button>
